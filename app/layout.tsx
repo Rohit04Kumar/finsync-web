@@ -17,7 +17,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://finsync-web-dun.vercel.app"),
+  metadataBase: new URL("https://finsync-expense-tracker.web.app"),
   title: "Finsync — Personal Expense Tracker & Smart Budget Manager",
   description: "Track daily expenses, manage category budgets, track loans & debts, and securely sync backups to your private Google Drive.",
   icons: {
