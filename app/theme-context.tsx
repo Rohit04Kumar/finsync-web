@@ -26,15 +26,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       if (saved === 'light' || saved === 'dark') {
         applyTheme(saved);
         setTheme(saved);
-      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-        applyTheme('light');
-        setTheme('light');
       } else {
         applyTheme('dark');
         setTheme('dark');
       }
     } catch {
       applyTheme('dark');
+      setTheme('dark');
     }
     setMounted(true);
   }, []);
